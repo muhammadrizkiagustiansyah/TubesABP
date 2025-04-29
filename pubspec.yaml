@@ -1,0 +1,51 @@
+name: washup_app
+description: Aplikasi Jasa Laundry Online dengan Fitur Pemesanan, Tracking, dan Pembayaran
+version: 1.0.0+1
+
+environment:
+  sdk: '^3.7.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Package dasar
+  cupertino_icons: ^1.0.2
+  provider: ^6.1.3  # Update ke versi terbaru
+  http: ^1.3.0
+  shared_preferences: ^2.2.2
+
+  # UI/UX
+  flutter_svg: ^2.0.7
+  fluttertoast: ^8.2.2
+  shimmer: ^3.0.0
+  intl: ^0.20.2
+
+  # Fitur khusus
+  camera: ^0.11.1
+  image_picker: ^1.0.4
+  flutter_map: ^8.1.1
+  latlong2: ^0.9.1
+  geolocator: ^14.0.0
+  mobile_scanner: ^3.5.2
+  qr_flutter: ^4.0.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0  # Update ke versi terbaru sesuai dengan Flutter 3.x
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/svgs/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
